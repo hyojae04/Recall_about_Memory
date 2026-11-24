@@ -1,0 +1,5189 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "recall-ko-synthetic-1.0",
+  "startedAt": "2026-11-11T06:26:31.541Z",
+  "k": 3,
+  "durationMs": 10.052458999999999,
+  "scores": [
+    {
+      "caseId": "mina-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-10",
+              "text": "요즘 취미로 필름 사진을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06862500000001148
+      }
+    },
+    {
+      "caseId": "mina-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-1",
+              "text": "내가 선호하는 음료는 아이스 아메리카노야. 음료 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 8.934146117536056
+          },
+          {
+            "memory": {
+              "id": "mina-7",
+              "text": "음료 취향이 바뀌었어. 이제 따뜻한 루이보스차를 좋아해. 카페인을 줄이기로 했어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "mina-1"
+            },
+            "score": 1.28762408811332
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.5402089999999902
+      }
+    },
+    {
+      "caseId": "mina-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-7",
+              "text": "음료 취향이 바뀌었어. 이제 따뜻한 루이보스차를 좋아해. 카페인을 줄이기로 했어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "mina-1"
+            },
+            "score": 1.628527259036433
+          }
+        ],
+        "excludedIds": [
+          "mina-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.12399999999999523
+      }
+    },
+    {
+      "caseId": "mina-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-10",
+              "text": "요즘 취미로 필름 사진을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.01300000000000523
+      }
+    },
+    {
+      "caseId": "mina-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-2",
+              "text": "내 직장은 성수동 디자인 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3425319447279245
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.10133399999999426
+      }
+    },
+    {
+      "caseId": "mina-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-2",
+              "text": "내 직장은 성수동 디자인 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.2598268320424237
+          }
+        ],
+        "excludedIds": [
+          "mina-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.09112500000000523
+      }
+    },
+    {
+      "caseId": "mina-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-10",
+              "text": "요즘 취미로 필름 사진을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.011042000000003327
+      }
+    },
+    {
+      "caseId": "mina-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-4",
+              "text": "우리 반려동물은 고양이 모카야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 11.420040945938972
+          },
+          {
+            "memory": {
+              "id": "mina-2",
+              "text": "내 직장은 성수동 디자인 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3425319447279245
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.1081659999999971
+      }
+    },
+    {
+      "caseId": "mina-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-4",
+              "text": "우리 반려동물은 고양이 모카야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 11.008987648394495
+          },
+          {
+            "memory": {
+              "id": "mina-2",
+              "text": "내 직장은 성수동 디자인 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.2598268320424237
+          }
+        ],
+        "excludedIds": [
+          "mina-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.11549999999999727
+      }
+    },
+    {
+      "caseId": "mina-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-5",
+              "text": "진행하는 프로젝트는 브랜드 리뉴얼이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-4",
+              "text": "우리 반려동물은 고양이 모카야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.015457999999995309
+      }
+    },
+    {
+      "caseId": "mina-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-1",
+              "text": "내가 선호하는 음료는 아이스 아메리카노야. 음료 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 6.882160581586048
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.06283300000001191
+      }
+    },
+    {
+      "caseId": "mina-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-1",
+              "text": "내가 선호하는 음료는 아이스 아메리카노야. 음료 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 6.882160581586048
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.05679100000000403
+      }
+    },
+    {
+      "caseId": "mina-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-10",
+              "text": "요즘 취미로 필름 사진을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.008458000000004517
+      }
+    },
+    {
+      "caseId": "mina-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.10387499999998795
+      }
+    },
+    {
+      "caseId": "mina-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "mina-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.08770900000000381
+      }
+    },
+    {
+      "caseId": "mina-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "mina-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "mina-10",
+              "text": "요즘 취미로 필름 사진을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.00750000000000739
+      }
+    },
+    {
+      "caseId": "mina-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-7",
+              "text": "음료 취향이 바뀌었어. 이제 따뜻한 루이보스차를 좋아해. 카페인을 줄이기로 했어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "mina-1"
+            },
+            "score": 1.6865856243453947
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.11258300000000077
+      }
+    },
+    {
+      "caseId": "mina-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "mina-7",
+              "text": "음료 취향이 바뀌었어. 이제 따뜻한 루이보스차를 좋아해. 카페인을 줄이기로 했어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "mina-1"
+            },
+            "score": 1.628527259036433
+          }
+        ],
+        "excludedIds": [
+          "mina-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.10129200000000083
+      }
+    },
+    {
+      "caseId": "jun-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.009541999999996165
+      }
+    },
+    {
+      "caseId": "jun-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-1",
+              "text": "내가 선호하는 운동은 저녁 달리기야. 운동 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.747259037045456
+          },
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1.5032983699779443
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.09574999999999534
+      }
+    },
+    {
+      "caseId": "jun-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1.9174947693694537
+          }
+        ],
+        "excludedIds": [
+          "jun-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.09116699999999867
+      }
+    },
+    {
+      "caseId": "jun-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.007165999999998007
+      }
+    },
+    {
+      "caseId": "jun-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-2",
+              "text": "내 직장은 판교 게임 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.6051604603365717
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.27770800000000406
+      }
+    },
+    {
+      "caseId": "jun-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-2",
+              "text": "내 직장은 판교 게임 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5261473662729745
+          }
+        ],
+        "excludedIds": [
+          "jun-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06895800000000918
+      }
+    },
+    {
+      "caseId": "jun-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006957999999997355
+      }
+    },
+    {
+      "caseId": "jun-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-4",
+              "text": "우리 반려동물은 강아지 두부야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.420641841346287
+          },
+          {
+            "memory": {
+              "id": "jun-2",
+              "text": "내 직장은 판교 게임 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.6051604603365717
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.09025000000001171
+      }
+    },
+    {
+      "caseId": "jun-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-4",
+              "text": "우리 반려동물은 강아지 두부야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.104589465091898
+          },
+          {
+            "memory": {
+              "id": "jun-2",
+              "text": "내 직장은 판교 게임 스튜디오야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5261473662729745
+          }
+        ],
+        "excludedIds": [
+          "jun-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.0815419999999989
+      }
+    },
+    {
+      "caseId": "jun-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-5",
+              "text": "진행하는 프로젝트는 게임 튜토리얼이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-4",
+              "text": "우리 반려동물은 강아지 두부야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.0072909999999950514
+      }
+    },
+    {
+      "caseId": "jun-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-1",
+              "text": "내가 선호하는 운동은 저녁 달리기야. 운동 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 7.482072159606085
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.05158399999999119
+      }
+    },
+    {
+      "caseId": "jun-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-1",
+              "text": "내가 선호하는 운동은 저녁 달리기야. 운동 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 7.482072159606085
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.04058399999999551
+      }
+    },
+    {
+      "caseId": "jun-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006917000000001394
+      }
+    },
+    {
+      "caseId": "jun-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-4",
+              "text": "우리 반려동물은 강아지 두부야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.420641841346287
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0784579999999977
+      }
+    },
+    {
+      "caseId": "jun-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-4",
+              "text": "우리 반려동물은 강아지 두부야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.104589465091898
+          }
+        ],
+        "excludedIds": [
+          "jun-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.08345799999999315
+      }
+    },
+    {
+      "caseId": "jun-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "jun-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "jun-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0072499999999990905
+      }
+    },
+    {
+      "caseId": "jun-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1.969085110563362
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.08958299999999042
+      }
+    },
+    {
+      "caseId": "jun-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "jun-7",
+              "text": "운동 취향이 바뀌었어. 이제 아침 수영을 좋아해. 무릎에 부담을 줄이려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "jun-1"
+            },
+            "score": 1.9174947693694537
+          }
+        ],
+        "excludedIds": [
+          "jun-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.08220899999999176
+      }
+    },
+    {
+      "caseId": "sora-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-10",
+              "text": "요즘 취미로 수채화를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.009457999999995081
+      }
+    },
+    {
+      "caseId": "sora-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-1",
+              "text": "내가 선호하는 여행지는 부산이야. 여행지 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 13.478165223677118
+          },
+          {
+            "memory": {
+              "id": "sora-7",
+              "text": "여행지 취향이 바뀌었어. 이제 강릉을 좋아해. 조용한 동해 바다가 보고 싶어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "sora-1"
+            },
+            "score": 4.252282304979395
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.09291699999999992
+      }
+    },
+    {
+      "caseId": "sora-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-7",
+              "text": "여행지 취향이 바뀌었어. 이제 강릉을 좋아해. 조용한 동해 바다가 보고 싶어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "sora-1"
+            },
+            "score": 5.3736547279118705
+          }
+        ],
+        "excludedIds": [
+          "sora-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.08200000000000784
+      }
+    },
+    {
+      "caseId": "sora-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-10",
+              "text": "요즘 취미로 수채화를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006917000000001394
+      }
+    },
+    {
+      "caseId": "sora-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-2",
+              "text": "내 직장은 을지로 출판사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.596014253496881
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06199999999999761
+      }
+    },
+    {
+      "caseId": "sora-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-2",
+              "text": "내 직장은 을지로 출판사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5026101705118378
+          }
+        ],
+        "excludedIds": [
+          "sora-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05708299999999156
+      }
+    },
+    {
+      "caseId": "sora-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-10",
+              "text": "요즘 취미로 수채화를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006874999999993747
+      }
+    },
+    {
+      "caseId": "sora-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-4",
+              "text": "우리 반려동물은 고양이 밤이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 11.194666452014738
+          },
+          {
+            "memory": {
+              "id": "sora-2",
+              "text": "내 직장은 을지로 출판사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.596014253496881
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.14020800000000122
+      }
+    },
+    {
+      "caseId": "sora-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-4",
+              "text": "우리 반려동물은 고양이 밤이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.789555169093486
+          },
+          {
+            "memory": {
+              "id": "sora-2",
+              "text": "내 직장은 을지로 출판사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5026101705118378
+          }
+        ],
+        "excludedIds": [
+          "sora-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07004200000000083
+      }
+    },
+    {
+      "caseId": "sora-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-5",
+              "text": "진행하는 프로젝트는 독립 잡지야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-4",
+              "text": "우리 반려동물은 고양이 밤이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.007084000000006085
+      }
+    },
+    {
+      "caseId": "sora-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-1",
+              "text": "내가 선호하는 여행지는 부산이야. 여행지 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 11.022429515047154
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.04133299999999451
+      }
+    },
+    {
+      "caseId": "sora-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-1",
+              "text": "내가 선호하는 여행지는 부산이야. 여행지 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 11.022429515047154
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.04566699999999457
+      }
+    },
+    {
+      "caseId": "sora-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-10",
+              "text": "요즘 취미로 수채화를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006916000000003919
+      }
+    },
+    {
+      "caseId": "sora-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0609579999999994
+      }
+    },
+    {
+      "caseId": "sora-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "sora-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.15375000000000227
+      }
+    },
+    {
+      "caseId": "sora-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "sora-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "sora-10",
+              "text": "요즘 취미로 수채화를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.007082999999994399
+      }
+    },
+    {
+      "caseId": "sora-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-8",
+              "text": "회의는 수요일 오후 세 시로 잡혔어. 발표 자료를 준비해야 해.",
+              "timestamp": "2026-10-09T09:00:00Z",
+              "session": 3
+            },
+            "score": 2.1327211562052315
+          },
+          {
+            "memory": {
+              "id": "sora-3",
+              "text": "이번 주말에는 친구들이랑 공원에서 산책했어. 날씨가 정말 좋았어.",
+              "timestamp": "2026-10-03T09:00:00Z",
+              "session": 1
+            },
+            "score": 1.9059587787795214
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.1785420000000073
+      }
+    },
+    {
+      "caseId": "sora-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "sora-8",
+              "text": "회의는 수요일 오후 세 시로 잡혔어. 발표 자료를 준비해야 해.",
+              "timestamp": "2026-10-09T09:00:00Z",
+              "session": 3
+            },
+            "score": 2.057001525043003
+          },
+          {
+            "memory": {
+              "id": "sora-3",
+              "text": "이번 주말에는 친구들이랑 공원에서 산책했어. 날씨가 정말 좋았어.",
+              "timestamp": "2026-10-03T09:00:00Z",
+              "session": 1
+            },
+            "score": 1.838734482192781
+          }
+        ],
+        "excludedIds": [
+          "sora-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.08137500000000841
+      }
+    },
+    {
+      "caseId": "leo-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.008833999999993125
+      }
+    },
+    {
+      "caseId": "leo-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-1",
+              "text": "내가 선호하는 개발 언어는 JavaScript야. 개발 언어 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 12.483087207520292
+          },
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 3.0565552744467452
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.12262499999999932
+      }
+    },
+    {
+      "caseId": "leo-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 3.906546356953579
+          }
+        ],
+        "excludedIds": [
+          "leo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07254100000000108
+      }
+    },
+    {
+      "caseId": "leo-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.007000000000005002
+      }
+    },
+    {
+      "caseId": "leo-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-2",
+              "text": "내 직장은 역삼동 스타트업이야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.410618723986652
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06129100000001131
+      }
+    },
+    {
+      "caseId": "leo-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-2",
+              "text": "내 직장은 역삼동 스타트업이야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3444546579154992
+          }
+        ],
+        "excludedIds": [
+          "leo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05762500000000159
+      }
+    },
+    {
+      "caseId": "leo-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006707999999989056
+      }
+    },
+    {
+      "caseId": "leo-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-4",
+              "text": "우리 반려동물은 강아지 콩이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.346828828149675
+          },
+          {
+            "memory": {
+              "id": "leo-2",
+              "text": "내 직장은 역삼동 스타트업이야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.410618723986652
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0715409999999963
+      }
+    },
+    {
+      "caseId": "leo-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-4",
+              "text": "우리 반려동물은 강아지 콩이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.048630802568455
+          },
+          {
+            "memory": {
+              "id": "leo-2",
+              "text": "내 직장은 역삼동 스타트업이야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3444546579154992
+          }
+        ],
+        "excludedIds": [
+          "leo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.0672919999999948
+      }
+    },
+    {
+      "caseId": "leo-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-5",
+              "text": "진행하는 프로젝트는 예약 서비스야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-4",
+              "text": "우리 반려동물은 강아지 콩이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.007167000000009693
+      }
+    },
+    {
+      "caseId": "leo-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-1",
+              "text": "내가 선호하는 개발 언어는 JavaScript야. 개발 언어 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 10.025473533278541
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.039749999999997954
+      }
+    },
+    {
+      "caseId": "leo-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-1",
+              "text": "내가 선호하는 개발 언어는 JavaScript야. 개발 언어 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 10.025473533278541
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.038167000000001394
+      }
+    },
+    {
+      "caseId": "leo-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006958000000011566
+      }
+    },
+    {
+      "caseId": "leo-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06262499999999704
+      }
+    },
+    {
+      "caseId": "leo-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "leo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05995799999999463
+      }
+    },
+    {
+      "caseId": "leo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "leo-7",
+              "text": "개발 언어 취향이 바뀌었어. 이제 TypeScript를 좋아해. 타입 오류를 미리 잡고 싶어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "leo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "leo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "leo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006750000000010914
+      }
+    },
+    {
+      "caseId": "leo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07400000000001228
+      }
+    },
+    {
+      "caseId": "leo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "leo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06745800000000202
+      }
+    },
+    {
+      "caseId": "yuna-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-10",
+              "text": "요즘 취미로 도예를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.008625000000009209
+      }
+    },
+    {
+      "caseId": "yuna-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-1",
+              "text": "내가 선호하는 음악은 인디 록이야. 음악 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 10.317401608776152
+          },
+          {
+            "memory": {
+              "id": "yuna-7",
+              "text": "음악 취향이 바뀌었어. 이제 재즈 피아노를 좋아해. 차분하게 집중하고 싶어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "yuna-1"
+            },
+            "score": 1.4088175758336563
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.09629200000000537
+      }
+    },
+    {
+      "caseId": "yuna-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-7",
+              "text": "음악 취향이 바뀌었어. 이제 재즈 피아노를 좋아해. 차분하게 집중하고 싶어.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "yuna-1"
+            },
+            "score": 1.8086305502052527
+          }
+        ],
+        "excludedIds": [
+          "yuna-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07200000000000273
+      }
+    },
+    {
+      "caseId": "yuna-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-10",
+              "text": "요즘 취미로 도예를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.012833000000000538
+      }
+    },
+    {
+      "caseId": "yuna-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-2",
+              "text": "내 직장은 연남동 건축사무소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.410618723986652
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06775000000000375
+      }
+    },
+    {
+      "caseId": "yuna-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-2",
+              "text": "내 직장은 연남동 건축사무소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3495804730763097
+          }
+        ],
+        "excludedIds": [
+          "yuna-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.058624999999992156
+      }
+    },
+    {
+      "caseId": "yuna-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-10",
+              "text": "요즘 취미로 도예를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006749999999996703
+      }
+    },
+    {
+      "caseId": "yuna-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-4",
+              "text": "우리 반려동물은 고양이 레오야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 11.162193668310321
+          },
+          {
+            "memory": {
+              "id": "yuna-2",
+              "text": "내 직장은 연남동 건축사무소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.410618723986652
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07083399999999074
+      }
+    },
+    {
+      "caseId": "yuna-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-4",
+              "text": "우리 반려동물은 고양이 레오야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.839179604017543
+          },
+          {
+            "memory": {
+              "id": "yuna-2",
+              "text": "내 직장은 연남동 건축사무소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.3495804730763097
+          }
+        ],
+        "excludedIds": [
+          "yuna-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06708299999999667
+      }
+    },
+    {
+      "caseId": "yuna-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-5",
+              "text": "진행하는 프로젝트는 작은 도서관이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-4",
+              "text": "우리 반려동물은 고양이 레오야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.007040999999986752
+      }
+    },
+    {
+      "caseId": "yuna-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-1",
+              "text": "내가 선호하는 음악은 인디 록이야. 음악 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 7.885933157245361
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.09962500000000318
+      }
+    },
+    {
+      "caseId": "yuna-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-1",
+              "text": "내가 선호하는 음악은 인디 록이야. 음악 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 7.885933157245361
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.03587500000000432
+      }
+    },
+    {
+      "caseId": "yuna-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-10",
+              "text": "요즘 취미로 도예를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006707999999989056
+      }
+    },
+    {
+      "caseId": "yuna-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06808399999999892
+      }
+    },
+    {
+      "caseId": "yuna-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "yuna-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06404100000000312
+      }
+    },
+    {
+      "caseId": "yuna-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "yuna-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "yuna-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "yuna-10",
+              "text": "요즘 취미로 도예를 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006749999999996703
+      }
+    },
+    {
+      "caseId": "yuna-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07533300000000054
+      }
+    },
+    {
+      "caseId": "yuna-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "yuna-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07074999999998965
+      }
+    },
+    {
+      "caseId": "haon-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.008167000000000257
+      }
+    },
+    {
+      "caseId": "haon-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-1",
+              "text": "내가 선호하는 아침 메뉴는 토스트야. 아침 메뉴 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 11.968454972113511
+          },
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 3.373060087301795
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0850420000000014
+      }
+    },
+    {
+      "caseId": "haon-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 4.290657392949498
+          }
+        ],
+        "excludedIds": [
+          "haon-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07366700000000037
+      }
+    },
+    {
+      "caseId": "haon-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006709000000000742
+      }
+    },
+    {
+      "caseId": "haon-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-2",
+              "text": "내 직장은 광화문 연구소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.62734908672141
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06425000000000125
+      }
+    },
+    {
+      "caseId": "haon-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-2",
+              "text": "내 직장은 광화문 연구소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5442065452242275
+          }
+        ],
+        "excludedIds": [
+          "haon-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05966700000000458
+      }
+    },
+    {
+      "caseId": "haon-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006833000000000311
+      }
+    },
+    {
+      "caseId": "haon-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-4",
+              "text": "우리 반려동물은 강아지 구름이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 9.819417741740565
+          },
+          {
+            "memory": {
+              "id": "haon-2",
+              "text": "내 직장은 광화문 연구소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.62734908672141
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07416699999998855
+      }
+    },
+    {
+      "caseId": "haon-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-4",
+              "text": "우리 반려동물은 강아지 구름이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 9.517679441015462
+          },
+          {
+            "memory": {
+              "id": "haon-2",
+              "text": "내 직장은 광화문 연구소야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.5442065452242275
+          }
+        ],
+        "excludedIds": [
+          "haon-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06979199999999253
+      }
+    },
+    {
+      "caseId": "haon-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-5",
+              "text": "진행하는 프로젝트는 도시 데이터 분석이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-4",
+              "text": "우리 반려동물은 강아지 구름이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.007041000000000963
+      }
+    },
+    {
+      "caseId": "haon-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-1",
+              "text": "내가 선호하는 아침 메뉴는 토스트야. 아침 메뉴 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.639916812269783
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.040208000000006905
+      }
+    },
+    {
+      "caseId": "haon-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-1",
+              "text": "내가 선호하는 아침 메뉴는 토스트야. 아침 메뉴 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.639916812269783
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.039332999999999174
+      }
+    },
+    {
+      "caseId": "haon-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006709000000000742
+      }
+    },
+    {
+      "caseId": "haon-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-4",
+              "text": "우리 반려동물은 강아지 구름이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 7.364563306305424
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.08183300000000315
+      }
+    },
+    {
+      "caseId": "haon-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-4",
+              "text": "우리 반려동물은 강아지 구름이야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 7.138259580761597
+          }
+        ],
+        "excludedIds": [
+          "haon-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07729199999999992
+      }
+    },
+    {
+      "caseId": "haon-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "haon-7",
+              "text": "아침 메뉴 취향이 바뀌었어. 이제 오트밀을 좋아해. 아침을 좀 더 가볍게 먹으려고 해.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "haon-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "haon-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "haon-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006624999999999659
+      }
+    },
+    {
+      "caseId": "haon-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07233400000001211
+      }
+    },
+    {
+      "caseId": "haon-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "haon-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06887500000000557
+      }
+    },
+    {
+      "caseId": "ian-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-10",
+              "text": "요즘 취미로 베이킹을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.008416999999994346
+      }
+    },
+    {
+      "caseId": "ian-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-1",
+              "text": "내가 선호하는 이동 수단은 자동차야. 이동 수단 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 11.925515742426576
+          },
+          {
+            "memory": {
+              "id": "ian-7",
+              "text": "이동 수단 취향이 바뀌었어. 이제 자전거를 좋아해. 짧은 거리는 직접 움직이려고 해.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "ian-1"
+            },
+            "score": 2.737395453805464
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.08166700000001015
+      }
+    },
+    {
+      "caseId": "ian-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-7",
+              "text": "이동 수단 취향이 바뀌었어. 이제 자전거를 좋아해. 짧은 거리는 직접 움직이려고 해.",
+              "timestamp": "2026-10-08T09:00:00Z",
+              "session": 3,
+              "supersedes": "ian-1"
+            },
+            "score": 3.486597614059297
+          }
+        ],
+        "excludedIds": [
+          "ian-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07220800000000338
+      }
+    },
+    {
+      "caseId": "ian-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-10",
+              "text": "요즘 취미로 베이킹을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006791000000006875
+      }
+    },
+    {
+      "caseId": "ian-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-2",
+              "text": "내 직장은 합정 영상 제작사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.7147801991870972
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.12737500000000068
+      }
+    },
+    {
+      "caseId": "ian-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-2",
+              "text": "내 직장은 합정 영상 제작사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.6270633083255865
+          }
+        ],
+        "excludedIds": [
+          "ian-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05962499999999693
+      }
+    },
+    {
+      "caseId": "ian-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-10",
+              "text": "요즘 취미로 베이킹을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006707999999989056
+      }
+    },
+    {
+      "caseId": "ian-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-4",
+              "text": "우리 반려동물은 고양이 먼지야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 11.27323981018371
+          },
+          {
+            "memory": {
+              "id": "ian-2",
+              "text": "내 직장은 합정 영상 제작사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.7147801991870972
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0730000000000075
+      }
+    },
+    {
+      "caseId": "ian-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-4",
+              "text": "우리 반려동물은 고양이 먼지야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.903060470530782
+          },
+          {
+            "memory": {
+              "id": "ian-2",
+              "text": "내 직장은 합정 영상 제작사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.6270633083255865
+          }
+        ],
+        "excludedIds": [
+          "ian-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06858400000000131
+      }
+    },
+    {
+      "caseId": "ian-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-5",
+              "text": "진행하는 프로젝트는 다큐멘터리 편집이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-4",
+              "text": "우리 반려동물은 고양이 먼지야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.00708300000000861
+      }
+    },
+    {
+      "caseId": "ian-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-1",
+              "text": "내가 선호하는 이동 수단은 자동차야. 이동 수단 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.504420176464897
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.039042000000009125
+      }
+    },
+    {
+      "caseId": "ian-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-1",
+              "text": "내가 선호하는 이동 수단은 자동차야. 이동 수단 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.504420176464897
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.03849999999999909
+      }
+    },
+    {
+      "caseId": "ian-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-10",
+              "text": "요즘 취미로 베이킹을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006624999999999659
+      }
+    },
+    {
+      "caseId": "ian-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06945799999999736
+      }
+    },
+    {
+      "caseId": "ian-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": true,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "ian-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06450000000000955
+      }
+    },
+    {
+      "caseId": "ian-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "ian-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "ian-10",
+              "text": "요즘 취미로 베이킹을 시작했어. 새로운 걸 배우는 게 즐거워.",
+              "timestamp": "2026-10-11T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006750000000010914
+      }
+    },
+    {
+      "caseId": "ian-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-5",
+              "text": "진행하는 프로젝트는 다큐멘터리 편집이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 1.7098230046294058
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.07508299999999224
+      }
+    },
+    {
+      "caseId": "ian-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "ian-5",
+              "text": "진행하는 프로젝트는 다큐멘터리 편집이야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 1.6633606032797945
+          }
+        ],
+        "excludedIds": [
+          "ian-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06970900000000313
+      }
+    },
+    {
+      "caseId": "seo-update",
+      "category": "update",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.00837500000000091
+      }
+    },
+    {
+      "caseId": "seo-update",
+      "category": "update",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 0.5,
+      "staleCount": 1,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-1",
+              "text": "내가 선호하는 독서 장르는 추리 소설이야. 독서 장르 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 11.581759126192466
+          },
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 2.664249742866963
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0810419999999965
+      }
+    },
+    {
+      "caseId": "seo-update",
+      "category": "update",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 3.3822540697010446
+          }
+        ],
+        "excludedIds": [
+          "seo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.07204099999999869
+      }
+    },
+    {
+      "caseId": "seo-recall",
+      "category": "recall",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006833000000000311
+      }
+    },
+    {
+      "caseId": "seo-recall",
+      "category": "recall",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.9265751132881936
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.06316700000000708
+      }
+    },
+    {
+      "caseId": "seo-recall",
+      "category": "recall",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.825058030728383
+          }
+        ],
+        "excludedIds": [
+          "seo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.05920900000000984
+      }
+    },
+    {
+      "caseId": "seo-multi",
+      "category": "multi",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006708000000003267
+      }
+    },
+    {
+      "caseId": "seo-multi",
+      "category": "multi",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-4",
+              "text": "우리 반려동물은 강아지 호두야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.456599844644865
+          },
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.9265751132881936
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.08295799999999076
+      }
+    },
+    {
+      "caseId": "seo-multi",
+      "category": "multi",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 2,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-4",
+              "text": "우리 반려동물은 강아지 호두야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 10.104589465091898
+          },
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.825058030728383
+          }
+        ],
+        "excludedIds": [
+          "seo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.06933300000000031
+      }
+    },
+    {
+      "caseId": "seo-temporal",
+      "category": "temporal",
+      "strategy": "recent",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-6",
+              "text": "어제 장을 보러 갔다가 예쁜 머그컵을 발견했어. 다음에 다시 가 보려고.",
+              "timestamp": "2026-10-06T09:00:00Z",
+              "session": 2
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-5",
+              "text": "진행하는 프로젝트는 온라인 강의야. 다음 달까지 끝낼 예정이야.",
+              "timestamp": "2026-10-05T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-4",
+              "text": "우리 반려동물은 강아지 호두야. 이름을 꼭 기억해 줘.",
+              "timestamp": "2026-10-04T09:00:00Z",
+              "session": 2
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.007000000000005002
+      }
+    },
+    {
+      "caseId": "seo-temporal",
+      "category": "temporal",
+      "strategy": "bm25",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-1",
+              "text": "내가 선호하는 독서 장르는 추리 소설이야. 독서 장르 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.139644967948124
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.043583999999995626
+      }
+    },
+    {
+      "caseId": "seo-temporal",
+      "category": "temporal",
+      "strategy": "temporal",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-1",
+              "text": "내가 선호하는 독서 장르는 추리 소설이야. 독서 장르 취향을 기억해 줘.",
+              "timestamp": "2026-10-01T09:00:00Z",
+              "session": 1
+            },
+            "score": 9.139644967948124
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 6,
+        "elapsedMs": 0.037582999999997924
+      }
+    },
+    {
+      "caseId": "seo-abstention",
+      "category": "abstention",
+      "strategy": "recent",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.006667000000007306
+      }
+    },
+    {
+      "caseId": "seo-abstention",
+      "category": "abstention",
+      "strategy": "bm25",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.9265751132881936
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.071708000000001
+      }
+    },
+    {
+      "caseId": "seo-abstention",
+      "category": "abstention",
+      "strategy": "temporal",
+      "recall": null,
+      "reciprocalRank": null,
+      "staleCount": 0,
+      "retrievedCount": 1,
+      "abstentionCorrect": false,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-2",
+              "text": "내 직장은 마포 교육 회사야. 여기에서 일하고 있어.",
+              "timestamp": "2026-10-02T09:00:00Z",
+              "session": 1
+            },
+            "score": 2.825058030728383
+          }
+        ],
+        "excludedIds": [
+          "seo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.0675420000000031
+      }
+    },
+    {
+      "caseId": "seo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "recent",
+      "recall": 1,
+      "reciprocalRank": 1,
+      "staleCount": 0,
+      "retrievedCount": 3,
+      "abstentionCorrect": null,
+      "success": true,
+      "result": {
+        "strategy": "recent",
+        "hits": [
+          {
+            "memory": {
+              "id": "seo-7",
+              "text": "독서 장르 취향이 바뀌었어. 이제 과학 에세이를 좋아해. 새로운 지식을 배우는 게 재밌어.",
+              "timestamp": "2026-10-13T10:00:00Z",
+              "session": 4,
+              "supersedes": "seo-1"
+            },
+            "score": 1
+          },
+          {
+            "memory": {
+              "id": "seo-12",
+              "text": "내일은 책상을 정리하고 밀린 이메일에 답장하려고 해.",
+              "timestamp": "2026-10-13T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.5
+          },
+          {
+            "memory": {
+              "id": "seo-11",
+              "text": "오늘은 비가 많이 와서 집에서 쉬었어. 창밖을 보니 가을이 온 것 같아.",
+              "timestamp": "2026-10-12T09:00:00Z",
+              "session": 4
+            },
+            "score": 0.3333333333333333
+          }
+        ],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.014125000000007049
+      }
+    },
+    {
+      "caseId": "seo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "bm25",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "bm25",
+        "hits": [],
+        "excludedIds": [],
+        "visibleCount": 12,
+        "elapsedMs": 0.0829169999999948
+      }
+    },
+    {
+      "caseId": "seo-paraphrase",
+      "category": "paraphrase",
+      "strategy": "temporal",
+      "recall": 0,
+      "reciprocalRank": 0,
+      "staleCount": 0,
+      "retrievedCount": 0,
+      "abstentionCorrect": null,
+      "success": false,
+      "result": {
+        "strategy": "temporal",
+        "hits": [],
+        "excludedIds": [
+          "seo-1"
+        ],
+        "visibleCount": 12,
+        "elapsedMs": 0.13087499999998897
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "strategy": "recent",
+      "recall": 0.2,
+      "mrr": 0.2,
+      "staleRate": 0,
+      "abstentionAccuracy": 0,
+      "successCount": 8,
+      "caseCount": 48,
+      "averageMs": 0.009163125000000901,
+      "categories": {
+        "update": {
+          "success": 4,
+          "total": 8
+        },
+        "recall": {
+          "success": 0,
+          "total": 8
+        },
+        "multi": {
+          "success": 0,
+          "total": 8
+        },
+        "temporal": {
+          "success": 0,
+          "total": 8
+        },
+        "abstention": {
+          "success": 0,
+          "total": 8
+        },
+        "paraphrase": {
+          "success": 4,
+          "total": 8
+        }
+      }
+    },
+    {
+      "strategy": "bm25",
+      "recall": 0.85,
+      "mrr": 0.75,
+      "staleRate": 0.14285714285714285,
+      "abstentionAccuracy": 0.625,
+      "successCount": 31,
+      "caseCount": 48,
+      "averageMs": 0.09389325000000011,
+      "categories": {
+        "update": {
+          "success": 0,
+          "total": 8
+        },
+        "recall": {
+          "success": 8,
+          "total": 8
+        },
+        "multi": {
+          "success": 8,
+          "total": 8
+        },
+        "temporal": {
+          "success": 8,
+          "total": 8
+        },
+        "abstention": {
+          "success": 5,
+          "total": 8
+        },
+        "paraphrase": {
+          "success": 2,
+          "total": 8
+        }
+      }
+    },
+    {
+      "strategy": "temporal",
+      "recall": 0.85,
+      "mrr": 0.85,
+      "staleRate": 0,
+      "abstentionAccuracy": 0.625,
+      "successCount": 39,
+      "caseCount": 48,
+      "averageMs": 0.07175004166666661,
+      "categories": {
+        "update": {
+          "success": 8,
+          "total": 8
+        },
+        "recall": {
+          "success": 8,
+          "total": 8
+        },
+        "multi": {
+          "success": 8,
+          "total": 8
+        },
+        "temporal": {
+          "success": 8,
+          "total": 8
+        },
+        "abstention": {
+          "success": 5,
+          "total": 8
+        },
+        "paraphrase": {
+          "success": 2,
+          "total": 8
+        }
+      }
+    }
+  ]
+}
